@@ -72,7 +72,11 @@ namespace GrokkingTPL
 
             if (ParallelRadioButton.Checked)
             {
-                Parallel.For(0, content.Length, index =>
+                var options = new ParallelOptions()
+                {
+                    MaxDegreeOfParallelism = Environment.ProcessorCount
+                };
+                Parallel.For(0, content.Length, options, index =>
                     {
                         var words = content[index].Split(' ').ToList();
                         words.Sort();
