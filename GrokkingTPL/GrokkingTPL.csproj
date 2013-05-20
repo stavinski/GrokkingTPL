@@ -52,6 +52,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="ParallelAggregation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParallelAggregation.Designer.cs">
+      <DependentUpon>ParallelAggregation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParallelLoop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParallelAggregation.resx">
+      <DependentUpon>ParallelAggregation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParallelLoop.resx">
       <DependentUpon>ParallelLoop.cs</DependentUpon>

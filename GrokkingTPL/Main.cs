@@ -21,5 +21,11 @@ namespace GrokkingTPL
             var form = new ParallelLoop();
             form.Show();
         }
+
+        private void ParallelAggregationButton_Click(object sender, EventArgs e)
+        {
+            var form = new ParallelAggregation();
+            form.Show();
+        }
     }
 }
